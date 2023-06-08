@@ -1,0 +1,20 @@
+function fiboEvenSum(n){
+    let sum = 0;
+    let fiboArr = [1,2];
+    let last_element = fiboArr[fiboArr.length-1];
+    let before_last_element;
+
+    while(last_element <= n) {
+        if (last_element %2 == 0) {
+            sum = sum + last_element;
+        }
+
+        before_last_element = fiboArr[fiboArr.length - 2];
+        fiboArr.push(before_last_element + last_element);
+
+        last_element = fiboArr[fiboArr.length - 1];
+    }
+  return sum;
+}
+
+console.log(fiboEvenSum(34));

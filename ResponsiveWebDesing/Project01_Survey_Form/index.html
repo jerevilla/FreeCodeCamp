@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name <input name="name" id="name" type="text"
+                    placeholder="enter your name" required></label>
+            <label for="email" id="email-label">Email <input name="email" id="email" type="email"
+                    placeholder="enter your email" required></label>
+            <label for="number" id="number-label">Age <input name="number" id="number" type="number" placeholder="Age"
+                    min="13" max="120" /></label>
+            <label for="dropdown">Which option best describes your current role? <select id="dropdown" name="dropdown">
+                    <option value="">Select current role</option>
+                    <option value="1">Studen</option>
+                    <option value="2">Full Time Job </option>
+                    <option value="3">Full Time Leader </option>
+                    <option value="4">Prefer not to say</option>
+                    <option value="5">Other</option>
+                </select></label>
+            Would you recommend freeCodeCamp to a friend?
+            <label for="definitely-recommend">
+                <input id="definitely-recommend" type="radio" name="recommend-type" class="inline" value="Definitely"
+                    checked /> Definitely</label>
+            <label for="maybe-recommend"><input id="maybe-recommend" type="radio" name="recommend-type" class="inline"
+                    value="Maybe" />Maybe</label>
+            <label for="notSure-recommend"><input id="notSure-recommend" type="radio" name="recommend-type"
+                    class="inline" value="Not Sure" />Not Sure</label>
+            What would you like to see improved? (Check all that apply)
+            <label for="frontend">
+                <input id="frontend" type="checkbox" required name="frontend" class="inline" value="Front-end Projects" />
+                Front-end Projects
+            </label>
+            <label for="backend">
+                <input id="backend" type="checkbox" required name="backend" class="inline" value="Back-end Projects"/>
+                Back-end Projects
+            </label>
+            <label for="data">
+                <input id="data" type="checkbox" required name="data" class="inline" value="Data Visualization" />
+                Data Visualization
+            </label>            
+            <label for="challenges">
+                <input id="challenges" type="checkbox" required name="challenges" class="inline" value="Challenges" />
+                Challenges
+            </label>            
+            <label for="additional">
+                <input id="additional" type="checkbox" required name="additional" class="inline" value="Additional Course" />
+                Additional Courses
+            </label>
+            
+            <label for="comments">Any comments or suggestions?
+                <textarea id="comments" name="comments" rows="3" cols="30"
+                    placeholder="Enter your comment here..."></textarea>
+            </label>
+            <input type="submit" id="submit" value="Submit" />
+        </fieldset>
+    </form>
+</body>
+
+</html>

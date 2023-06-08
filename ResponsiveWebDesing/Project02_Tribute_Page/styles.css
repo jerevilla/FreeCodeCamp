@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    font-family: sans-serif;
+}
+.main {
+    background-color: #E5E8E8;
+    margin: auto 10px;
+    border-radius: 5px;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 40px;
+}
+.title p{
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.img-div {
+    background-color: #fff;
+    margin: auto 15px;
+    border-radius: 15px;
+    margin: 20px 30px;
+    display: block;
+    text-align: center;
+}
+
+.image {
+    padding: 30px 70px;
+    max-width: 100%;
+    display: block;
+}
+
+.img-caption {
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+.tribute-info h2 {
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 20px ;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    margin: auto 570px;
+}
+
+.timeline li {
+    line-height: 25px;
+    padding-bottom: 15px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.quote {
+    margin-top: 20px;
+}
+.quotetext {
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.titlefinal {
+    text-align: center;
+    margin: 20px 20px;
+    padding: 10px;
+}
